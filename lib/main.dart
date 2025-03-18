@@ -11,6 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'BigFont',
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(
+            fontSize: 18, fontWeight: FontWeight.bold
+          ),
+        ),
+          scaffoldBackgroundColor: Colors.black,
+      ),
+      debugShowCheckedModeBanner: false,
       home: LoginPage(),   // qual a tela que irá iniciar meu app
     );
   }

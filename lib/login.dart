@@ -50,24 +50,36 @@ class _LoginPageState extends State<LoginPage> {
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ),
             TextField(
               decoration: InputDecoration(
                 hintText: 'Nome de usuário',
+                hintStyle: TextStyle(
+                  color: Colors.white,
+                ),
                 border: OutlineInputBorder(),
               ),
               controller: _user,
+              style: TextStyle(
+                color: Colors.white
+              ),
             ),
 
             TextField(
               decoration: InputDecoration(
                   hintText: 'Insira sua senha',
+                  hintStyle: TextStyle(
+                    color: Colors.white,
+                  ),
                   border: OutlineInputBorder()
               ),
               controller: _pass,
               obscureText: true,
+              style: TextStyle(
+                color: Colors.white
+              ),
             ),
             ElevatedButton(onPressed: (){
               if (Logar()) {
